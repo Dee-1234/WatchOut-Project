@@ -11,3 +11,6 @@ WatchOut is a real-time, collaborative Pomodoro timer application built to boost
 1. Java / Spring Boot: Core application framework.
 2. Spring WebSockets / STOMP: For real-time, bi-directional client-server communication.
 3. Maven: Dependency management and build automation.
+
+# Screen Shots
+https://github.com/Dee-1234/WatchOut-Project/tree/main/Screen%20Shots
