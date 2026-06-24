@@ -1,0 +1,105 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f4f7f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+/* Timer Card */
+.timer-container {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+#phase-label {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #777;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+#timer-display {
+    font-size: 5rem;
+    font-weight: 800;
+    color: #2c3e50;
+    margin: 20px 0;
+    font-variant-numeric: tabular-nums; /* Prevents numbers from jumping */
+}
+
+/* Buttons */
+.btn-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+button {
+    padding: 14px;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* Color Palette */
+.work-btn {
+    background-color: #ff5f5f;
+    color: white;
+}
+
+.work-btn:hover {
+    background-color: #e04e4e;
+}
+
+.short-btn {
+    background-color: #4da3ff;
+    color: white;
+}
+
+.short-btn:hover {
+    background-color: #3a8ee6;
+}
+
+.long-btn {
+    background-color: #42b983;
+    color: white;
+}
+
+.long-btn:hover {
+    background-color: #369a6d;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .timer-container {
+        margin: 20px;
+        padding: 25px;
+    }
+    #timer-display {
+        font-size: 4rem;
+    }
+}
